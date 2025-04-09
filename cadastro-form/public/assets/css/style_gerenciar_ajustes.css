@@ -630,3 +630,9 @@ th {
   border-radius: 500px;
   border: 1px solid #FF6400;
 }
+
+.container_Lista h2{
+  font-size: 2rem;
+  color: #FF6400;
+  margin-bottom: 3%;
+}
