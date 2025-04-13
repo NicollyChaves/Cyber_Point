@@ -160,7 +160,7 @@ app.get('/logout', (req, res) => {
 //Listar contatos para edição
 // Rota para buscar todos os contatos
 app.get('/contatos', (req, res) => {
-  db.query('SELECT * FROM tb_contatos', (err, results) => {
+  db.query('SELECT * FROM tb_contatos ORDER BY nome ASC', (err, results) => {
     if (err) {
       return res.status(500).send(err);
     }
